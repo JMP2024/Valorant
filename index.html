@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valorant Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Contenedor principal -->
+    <div class="h-screen bg-cover bg-center"
+        style="background-image: url('IMG/mdq.jpg')">
+        <!-- Barra de navegación -->
+        <nav class="flex items-center justify-between py-3 px-8">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="index.html"><img src="IMG/valorant.png" alt="Logo" class="h-16 w-16 object-contain" /></a>
+            </div>
+
+            <!-- Links -->
+            <div class="flex space-x-6">
+                <a href="mapas.html" class="text-black text-2xl font-semibold hover:text-red-500 transition duration-300">
+                    Mapas
+                </a>
+                <a href="agentes.html"
+                    class="text-black text-2xl font-semibold hover:text-red-500 transition duration-300">
+                    Agentes
+                </a>
+            </div>
+        </nav>
+        <div class="px-6 py-20">
+            <p class="text-white text-2xl font-valorant">¿Quieres conocer más<br /> acerca
+                de nuestros <a href="agentes.html" class="text-red-500 font-bold hover:underline">agentes</a><br />
+                y sobre la rotación actual <br /> 
+                de <a href="mapas.html" class="text-red-500 font-bold hover:underline">mapas</a>?
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

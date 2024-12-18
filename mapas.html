@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapas de Valorant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="mapin.js" defer></script>
+</head>
+
+<body class="text-white h-full overflow-hidden">
+  <!-- Navbar -->
+  <nav id="navbar" class="flex flex-wrap items-center justify-between px-4 py-3 bg-white shadow-lg">
+    <!-- Logo -->
+    <div class="flex-shrink-0">
+      <a href="index.html"><img src="IMG/valorant.png" alt="Logo" class="h-12 w-12 object-contain" /></a>
+    </div>
+    <!-- Menú hamburguesa -->
+    <button id="menu-toggle" class="block md:hidden text-gray-700 focus:outline-none">
+      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+    <!-- Links -->
+    <div id="menu" class="hidden w-full md:flex md:w-auto md:space-x-6 items-center mt-4 md:mt-0">
+      <a href="mapas.html" class="block text-red-500 text-xl font-semibold hover:text-gray-400 transition duration-300 md:inline">Mapas</a>
+      <a href="agentes.html" class="block text-red-500 text-xl font-semibold hover:text-gray-400 transition duration-300 md:inline">Agentes</a>
+      <button id="theme-toggle" class="text-lg py-2 px-4 bg-gray-200 rounded-lg hover:bg-gray-300">
+        🌙
+      </button>
+    </div>
+  </nav>
+
+  <!-- Contenedor -->
+  <div id="container" class="w-full flex flex-col snap-y snap-mandatory overflow-y-auto max-h-screen">
+  </div>
+</body>
+
+</html>
