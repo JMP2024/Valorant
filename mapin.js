@@ -1,6 +1,8 @@
 const BASE_URL = "https://valorant-api.com/v1";
 const divResults = document.getElementById("container");
 const themeToggle = document.getElementById("theme-toggle");
+const body = document.body; 
+const navbar = document.getElementById("navbar"); 
 
 
 fetch(`${BASE_URL}/maps`)
@@ -47,7 +49,7 @@ const addMapImage = (src, displayName, minimapSrc, listViewIconSrc) => {
     "left-4",
     "text-3xl",
     "font-bold",
-    "text-black",
+    "text-white",
     "z-10",
     "md:text-5xl"
   );
